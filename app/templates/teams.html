@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block page-title %}
+<title>BCCA Leadership Teams</title>
+{% endblock page-title %}
+
+
+{% block content %}
+<main id="teams-list-container">
+    <h1>Leadership Teams:</h1>
+
+    <ul id="team-list">
+        <li><a href="{% url 'team_details' team_name='procurement' %}">Procurement</a></li>
+        <li><a href="{% url 'team_details' team_name='management' %}">Management</a></li>
+        <li><a href="{% url 'team_details' team_name='community' %}">Community</a></li>
+        <li><a href="{% url 'team_details' team_name='documentation' %}">Documentation</a></li>
+    </ul>
+</main>
+{% endblock content %}

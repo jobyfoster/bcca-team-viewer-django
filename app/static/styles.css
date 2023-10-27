@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0077cc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+#team-details-container {
+  background-color: rgb(81, 168, 255);
+
+  max-width: 1000px;
+  margin: 10em auto;
+  padding: 2em 1.5em 3em;
+
+  border-radius: 1em;
+}
+
+.flex-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#team-name,
+#team-job {
+  text-align: center;
+}
+
+#team-name {
+  font-size: 2.6rem;
+}
+
+#team-job {
+  margin: 1em auto 2em;
+  font-size: 1.4rem;
+
+  max-width: 80%;
+}
+
+#members {
+  list-style-position: inside;
+  width: fit-content;
+
+  margin-left: 40%;
+
+  font-size: 1.4rem;
+}
+
+.member-name {
+  margin-left: 0.8em;
+  font-size: 1.2rem;
+}
+
+#teams-list-container {
+  padding: 3em;
+}
+
+#team-list {
+  margin-left: 2em;
+  font-size: 1.3rem;
+}

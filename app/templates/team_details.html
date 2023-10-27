@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block page-title %}
+<title>{{ team.name.title }}</title>
+{% endblock page-title %}
+
+{% block content %}
+<main id="team-details-container" class="flex-center">
+    <h1 id="team-name">{{ team.name.title }} Team</h1>
+    <div id="team-job">{{ team.job }}</div>
+    <div id="members">
+        <h2>Members:</h2>
+        <ul>
+            {% for member in team.members %}
+                <li class="member-name">{{member}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</main>
+{% endblock content %}
